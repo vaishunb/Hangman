@@ -5,11 +5,7 @@
  * Assignment #4.
  */
 
-import acm.graphics.*;
 import acm.program.*;
-import acm.util.*;
-
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -223,8 +219,6 @@ public class Hangman extends ConsoleProgram {
     private String word; //A new word
     private char[] lettersGuessed; //Guessed letters to fill hidden word
     private int guessesLeft; //How many guesses left
-    private String[] chosenWords; //Words which have already been in the game
-    private int chosenWordsCounter; //Counter for the array above
     private HangmanLexicon dictionary; //Dictionary to get words from
     private HangmanCanvas2 canvas;
     private ArrayList<Integer> numbersToChose;
