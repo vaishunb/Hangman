@@ -5,7 +5,6 @@
  */
 
 import java.awt.Color;
-import java.awt.Font;
 
 import acm.graphics.*;
 
@@ -16,8 +15,6 @@ public class HangmanCanvas2 extends GCanvas {
 		this.height = height;
 		startX=width/8;
 		startY=height/6;
-		hangmanX = startX+BEAM_LENGTH;
-		hangmanY = startY+ROPE_LENGTH;
 	}
 
 /** Resets the display so that only the scaffold appears */
@@ -129,21 +126,8 @@ public class HangmanCanvas2 extends GCanvas {
 
 /* Constants for the simple version of the picture (in pixels) */
 	private static final int SCAFFOLD_HEIGHT = 300;
-	private static final int BEAM_LENGTH = 120;
-	private static final int ROPE_LENGTH = 15;
-	private static final int HEAD_RADIUS = 30;
-	private static final int BODY_LENGTH = 120;
-	private static final int ARM_OFFSET_FROM_HEAD = 23;
-	private static final int ARM_LENGTH = 60;
-	private static final int ARM_OFFSET = 20;
-	private static final int LEG_OFFSET = 20;
-//	private static final int LOWER_ARM_LENGTH = 37;
-//	private static final int HIP_WIDTH = 30;
-	private static final int LEG_LENGTH = 90;
-	private static final int FOOT_LENGTH = 15;
 	
 	private int width, height, startX, startY;
-	private int hangmanX, hangmanY;
 	private GImage graphics;
 	private GLabel actualWord, incorrectGuessesLabel;
 	private String incorrectGuesses = "";

@@ -5,7 +5,6 @@
  */
 
 import java.awt.Color;
-import java.awt.Font;
 
 import acm.graphics.*;
 
@@ -110,8 +109,6 @@ public class HangmanCanvas extends GCanvas {
 	private static final int ARM_LENGTH = 60;
 	private static final int ARM_OFFSET = 20;
 	private static final int LEG_OFFSET = 20;
-//	private static final int LOWER_ARM_LENGTH = 37;
-//	private static final int HIP_WIDTH = 30;
 	private static final int LEG_LENGTH = 90;
 	private static final int FOOT_LENGTH = 15;
 	
